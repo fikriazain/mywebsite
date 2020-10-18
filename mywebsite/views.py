@@ -1,9 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 #  method view
 def homepage(request):
-    return  HttpResponse('<h1> halo dunia </h1>')
-
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse('<h1> Ini about </h1>')
+    return render(request, 'about.html')
