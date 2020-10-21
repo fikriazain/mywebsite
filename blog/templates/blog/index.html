@@ -1,3 +1,5 @@
+{% load static %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +9,7 @@
     <title>{{ Judul }} | Fikri Aufaa Zain</title>
 </head>
 <body>
+    <img style="width:100%" src="{% static "blog/img/download.jpg" %}" alt="">
     <h1> Ini adalah {{ Judul }} </h1>
     <h2> Pembuatnya adalah : {{ Pembuat }} </h2>
     <ul>

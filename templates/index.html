@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,7 @@
     <title>{{ Judul }} | Irashaimase </title>
 </head>
 <body>
+    <img style="width:100%" src="{% static "img/meh.jpg" %}" alt="">
     <h1> Selamat datang di {{ Judul }} saya UwU </h1>
     <h2> Pembuatnya adalah : {{ Pembuat }}</h2>
     <p> website ini dibuat dengan menggunakan django</p>

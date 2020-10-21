@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,7 @@
     <title> about</title>
 </head>
 <body>
+    <img style="width:100%" src="{% static "about/img/1192044.jpg" %}" alt="">
     <h1> Ini adalah {{ Judul }}</h1>
     <h2> Ya pembuatnya adalah {{ Pembuat }}</h2>
     <ul>
