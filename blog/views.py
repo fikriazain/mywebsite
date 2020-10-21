@@ -8,7 +8,7 @@ def index(request):
         'Pembuat' : 'Meh'
     }
 
-    return render(request, 'index.html', context)
+    return render(request, 'blog/index.html', context)
 
 def recent(request):
     return HttpResponse('<h1> Ini adalah recent post </h1>')
