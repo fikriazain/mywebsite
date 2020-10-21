@@ -1,4 +1,8 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        'Judul' : 'WEBSITE OFFICIAL',
+        'Pembuat' : 'Fikri Aufaa Zain'
+    }
+    return render(request, 'index.html', context)
