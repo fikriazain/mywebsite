@@ -12,6 +12,17 @@
     <ul>
         <li><a href="/" title=""> home </a></li>
         <li><a href="/blog/" title=""> blog </a></li>
+        {% for link, name in nav %}
+            <li>
+                <a href=" {{link}} " title="">{{name}}</a>
+            </li>
+        {% endfor %}
+
     </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Perspiciatis amet a voluptas placeat incidunt, 
+        unde nisi consequuntur voluptate voluptatum iure atque,
+         numquam reiciendis impedit autem animi excepturi? Cum, esse accusamus?
+        </p>
 </body>
 </html>

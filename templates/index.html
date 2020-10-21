@@ -14,6 +14,12 @@
         <li><a href="/blog/" title=""> blog </a></li>
         <li><a href="/blog/recent/" title=''> Recent Blog</a></li>
         <li><a href='/about' title='about'> about </a> </li>
+
+        {% for link, name in nav %}
+            <li>
+                <a href=" {{link}} " title="">{{name}}</a>
+            </li>
+        {% endfor %}
     </ul>
 </body>
 </html>
